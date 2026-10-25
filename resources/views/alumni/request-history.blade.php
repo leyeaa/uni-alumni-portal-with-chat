@@ -14,7 +14,7 @@
                                         <div class="card">
                                             <div class="card-body">
                                               <h5 class="card-title" style="text-align: center; font-style:italic;">Listed below are all the requests you've made to the University</h5>
-                                              
+
                                               <!-- Bordered Table -->
                                               <table class="table table-bordered">
                                                 <thead>
@@ -25,6 +25,7 @@
                                                     <th scope="col">Service Type</th>
                                                     <th scope="col">Request Mode</th>
                                                     <th scope="col">Status</th>
+                                                    <th scope="col">Transcript Status</th>
                                                     <th scope="col">Payment</th>
                                                     <th scope="col">Date</th>
                                                   </tr>
@@ -34,22 +35,24 @@
                                                       <tr>
                                                         <th scope="row">{{$loop->iteration}}</th>
                                                         <td>
-                                                          @if ($serviceRequest->status=="PENDING")
-                                                            <a href="/services/{{$serviceRequest->id}}/edit">{{$serviceRequest->organization}}</a>
-                                                          @else
+                                                          {{-- @if ($serviceRequest->status=="PENDING") --}}
+                                                            {{-- <a href="/services/{{$serviceRequest->id}}/edit">{{$serviceRequest->organization}}</a> --}}
+                                                          {{-- @else --}}
                                                             {{$serviceRequest->organization}}
-                                                          @endif
-                                                          
+                                                          {{-- @endif --}}
+
                                                         </td>
                                                         <td>{{$serviceRequest->country}}</td>
                                                         <td>{{$serviceRequest->service_type}}</td>
                                                         <td>{{$serviceRequest->request_method}}</td>
                                                         <td>{{$serviceRequest->status}}</td>
+                                                        <td>{{$serviceRequest->request_status}}</td>
                                                         <td>
                                                           @if ($serviceRequest->payment=="UNPAID")
-                                                            <a href="{{route('servicePayment',$serviceRequest->id)}}">Pay</a>
+                                                            <a class="btn btn-success" href="{{route('servicePayment',$serviceRequest->id)}}">Pay</a> <br>
+                                                             <a class="btn btn-primary" href="/services/{{$serviceRequest->id}}/edit">Edit Request</a>
                                                           @else
-                                                            <a href="https://www.unimed.edu.ng/portal/payment_receipt.php?transid={{$serviceRequest->transaction_id}}">Receipt</a>
+                                                            <a class="btn btn-success" href="https://www.unimed.edu.ng/portal/payment_receipt.php?transid={{$serviceRequest->transaction_id}}">Receipt</a>
                                                           @endif
                                                         </td>
                                                         <td>{{$serviceRequest->updated_at->format('d-m-Y')}}</td>
@@ -59,8 +62,8 @@
                                                         <td colspan="8"><p>You currently do not have any request</p></td>
                                                       </tr>
                                                     @endforelse
-                                                  
-                                                  
+
+
                                                 </tbody>
                                               </table>
                                               <!-- End Bordered Table -->
@@ -68,7 +71,7 @@
                                             </div>
                                           </div>
                                     </div>
-                                    
+
                                 </div>
                         </div>
                     </div>

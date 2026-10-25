@@ -7,7 +7,7 @@
   Version: 1.1
 */
 
-/* CSS Index 
+/* CSS Index
 -----------------------------------
 1. Theme default
 2. HEADER
@@ -39,13 +39,13 @@
 28. BLOG SINGEL PAGE
 29. SHOP PAGE
 30. SHOP SINGEL PAGE
-31. CONTACT PAGE 
+31. CONTACT PAGE
 
 */
 
 
 /*===========================
-    1. Theme default css 
+    1. Theme default css
 ===========================*/
 
 
@@ -170,12 +170,12 @@ p {
 .messagePic{
     border-radius: 10%;
     width: 50px;
-    height: 50px; 
+    height: 50px;
 }
 .testimonialPic{
     border-radius: 10%;
     width: 200px;
-    height: 200px; 
+    height: 200px;
 }
 .bg_cover{
     background-position: center center;
@@ -276,19 +276,19 @@ p {
 	background-color:#07294d;
 	border:1px solid #FFF;
 	position:absolute;
-	
+
 }
 .rubix-cube .layer-1{
 	left:0px;
 	top:0px;
 	-webkit-animation: rubixcube4 2s infinite linear;
-	animation: rubixcube4 2s infinite linear; 
+	animation: rubixcube4 2s infinite linear;
 }
 .rubix-cube .layer-2{
 	left:16px;
 	top:0px;
 	-webkit-animation: rubixcube3 2s infinite  linear;
-	animation: rubixcube3 2s infinite  linear; 
+	animation: rubixcube3 2s infinite  linear;
 }
 .rubix-cube .layer-3{
 	left:32px;
@@ -298,57 +298,57 @@ p {
 	left:0px;
 	top:16px;
 	-webkit-animation: rubixcube5 2s infinite linear;
-	animation: rubixcube5 2s infinite linear; 
-	
+	animation: rubixcube5 2s infinite linear;
+
 }
 .rubix-cube .layer-5{
 	left:16px;
 	top:16px;
 	-webkit-animation: rubixcube2 2s infinite linear;
-	animation: rubixcube2 2s infinite linear; 
+	animation: rubixcube2 2s infinite linear;
 }
 .rubix-cube .layer-6{
 	left:32px;
 	top:16px;
 	-webkit-animation: rubixcube1 2s infinite linear;
-	animation: rubixcube1 2s infinite linear; 
+	animation: rubixcube1 2s infinite linear;
 }
 .rubix-cube .layer-7{
 	left:0px;
 	top:32px;
 	-webkit-animation: rubixcube6 2s infinite linear;
-	animation: rubixcube6 2s infinite linear; 
+	animation: rubixcube6 2s infinite linear;
 }
 .rubix-cube .layer-8{
 	left:16px;
 	top:32px;
 	-webkit-animation: rubixcube7 2s infinite linear;
-	animation: rubixcube7 2s infinite linear; 
-	
+	animation: rubixcube7 2s infinite linear;
+
 }
 @-webkit-keyframes rubixcube1{
 	20%{ top:16px; left:32px;}
 	30%{ top:32px; left:32px; }
 	40%{ top:32px; left:32px; }
 	50%{ top:32px; left:32px; }
-	60%{ top:32px; left:32px; }	
-	70%{ top:32px; left:32px; }	
-	80%{ top:32px; left:32px; }	
-	90%{ top:32px; left:32px; }	
+	60%{ top:32px; left:32px; }
+	70%{ top:32px; left:32px; }
+	80%{ top:32px; left:32px; }
+	90%{ top:32px; left:32px; }
 	100%{ top:32px; left:16px; }
-	
+
 }
 @keyframes rubixcube1{
 	20%{ top:16px; left:32px;}
 	30%{ top:32px; left:32px; }
 	40%{ top:32px; left:32px; }
 	50%{ top:32px; left:32px; }
-	60%{ top:32px; left:32px; }	
-	70%{ top:32px; left:32px; }	
-	80%{ top:32px; left:32px; }	
-	90%{ top:32px; left:32px; }	
+	60%{ top:32px; left:32px; }
+	70%{ top:32px; left:32px; }
+	80%{ top:32px; left:32px; }
+	90%{ top:32px; left:32px; }
 	100%{ top:32px; left:16px; }
-	
+
 }
 @-webkit-keyframes rubixcube2{
 	30%{ left:16px;}
@@ -450,7 +450,7 @@ p {
 
 
 /*=====================================================
-    2. HEADER css 
+    2. HEADER css
 ======================================================*/
 
 
@@ -830,7 +830,7 @@ p {
 
 
 /*=====================================================
-    3. SLIDER css 
+    3. SLIDER css
 ======================================================*/
 
 .single-slider{
@@ -995,9 +995,9 @@ p {
     display: -o-flex;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; 
-    -webkit-box-align: start; 
-    -ms-flex-align: start; 
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
 }
 .singel-slider-feature .icon{}
@@ -1017,7 +1017,7 @@ p {
 
 
 /*=====================================================
-    4. CATEGORY css 
+    4. CATEGORY css
 ======================================================*/
 
 .color-1{
@@ -1102,7 +1102,7 @@ p {
 
 
 /*=====================================================
-    5. ABOUT css 
+    5. ABOUT css
 ======================================================*/
 
 #about-part{
@@ -1183,7 +1183,7 @@ p {
 
 
 /*=====================================================
-    6. APPLY css 
+    6. APPLY css
 ======================================================*/
 
 
@@ -1221,7 +1221,7 @@ p {
 
 
 /*=====================================================
-    7. COURSE css 
+    7. COURSE css
 ======================================================*/
 
 .singel-course{
@@ -1387,7 +1387,7 @@ p {
 
 
 /*=====================================================
-    8. VIDEO FEATURES css 
+    8. VIDEO FEATURES css
 ======================================================*/
 
 #video-feature{
@@ -1453,7 +1453,7 @@ p {
 
 
 /*=====================================================
-    9. TEACHERS css 
+    9. TEACHERS css
 ======================================================*/
 
 .teachers-cont{}
@@ -1510,7 +1510,7 @@ p {
 
 
 /*=====================================================
-    10. PUBLICATION css 
+    10. PUBLICATION css
 ======================================================*/
 
 
@@ -1608,7 +1608,7 @@ p {
 }
 
 /*=====================================================
-    11. TEASTIMONIAL css 
+    11. TEASTIMONIAL css
 ======================================================*/
 
 #testimonial{}
@@ -1698,7 +1698,7 @@ p {
 
 
 /*=====================================================
-    12. NEWS css 
+    12. NEWS css
 ======================================================*/
 
 .singel-news{}
@@ -1751,7 +1751,7 @@ p {
 
 
 /*=====================================================
-    13. FOOTER css 
+    13. FOOTER css
 ======================================================*/
 
 .footer-top{
@@ -1783,14 +1783,14 @@ p {
     background-color: #021d3a;
     -webkit-transition: all 0.4s linear;
     transition: all 0.4s linear;
-    
+
 }
 .footer-about ul li a:hover{
     background-color: #ffc600;
     color: #021d3a;
     -webkit-transition: all 0.4s linear;
     transition: all 0.4s linear;
-    
+
 }
 
 
@@ -1890,7 +1890,7 @@ p {
 
 
 /*=====================================================
-    14. CATEGORY 2 css 
+    14. CATEGORY 2 css
 ======================================================*/
 
 .category-2-items{}
@@ -1964,7 +1964,7 @@ p {
     padding-right: 40px;
     padding-bottom: 40px;
     background-color: #fff;
-    
+
 }
 .category-form .main-form .singel-form{
     margin-top: 20px;
@@ -1995,7 +1995,7 @@ p {
 
 
 /*=====================================================
-    15. COURSE 2 css 
+    15. COURSE 2 css
 ======================================================*/
 
 .singel-course-2{}
@@ -2086,7 +2086,7 @@ p {
 
 
 /*=====================================================
-    16. COUNTER css 
+    16. COUNTER css
 ======================================================*/
 
 .singel-counter{
@@ -2116,7 +2116,7 @@ p {
 
 
 /*=====================================================
-    17. TEACHERS 2 css 
+    17. TEACHERS 2 css
 ======================================================*/
 
 .teachers-2{}
@@ -2226,7 +2226,7 @@ p {
 
 
 /*=====================================================
-    18. EVENT 2 css 
+    18. EVENT 2 css
 ======================================================*/
 
 .event-bg{
@@ -2242,8 +2242,8 @@ p {
     width: 100%;
     height: 100%;
     background: -webkit-gradient(linear, left top, right top, from(rgba(7,41,77,0.3)),color-stop(10%, rgba(7,41,77,0.3)),to(rgba(7,41,77,1)));
-    background: linear-gradient(to right, rgba(7,41,77,0.3) 0%,rgba(7,41,77,0.3) 10%,rgba(7,41,77,1) 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d07294d', endColorstr='#07294d',GradientType=1 ); 
+    background: linear-gradient(to right, rgba(7,41,77,0.3) 0%,rgba(7,41,77,0.3) 10%,rgba(7,41,77,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d07294d', endColorstr='#07294d',GradientType=1 );
 }
 
 .event-2 .event-title h3 {
@@ -2286,7 +2286,7 @@ p {
 
 
 /*=====================================================
-    19. COUNT DOWN css 
+    19. COUNT DOWN css
 ======================================================*/
 
 .count-down-cont{
@@ -2313,7 +2313,7 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    
+
 }
 .count-down-time .singel-count{
     -webkit-box-flex: 1;
@@ -2362,7 +2362,7 @@ p {
 
 
 /*=====================================================
-    20. PAGE BANNER  css 
+    20. PAGE BANNER  css
 ======================================================*/
 
 .page-banner-cont{
@@ -2396,7 +2396,7 @@ p {
 
 
 /*=====================================================
-    21. ABOUT PAGE css 
+    21. ABOUT PAGE css
 ======================================================*/
 
 .about-image img {
@@ -2422,7 +2422,7 @@ p {
 
 
 /*=====================================================
-    22. COURSES PAGE css 
+    22. COURSES PAGE css
 ======================================================*/
 
 .tab-content{}
@@ -2510,7 +2510,7 @@ p {
 
 
 /*=====================================================
-    23. COURSE SINGEl PAGE css 
+    23. COURSE SINGEl PAGE css
 ======================================================*/
 
 .corses-singel-left{
@@ -3001,7 +3001,7 @@ p {
 
 
 /*=====================================================
-    24. EVENT PAGE css 
+    24. EVENT PAGE css
 ======================================================*/
 
 .singel-event-list{
@@ -3059,7 +3059,7 @@ p {
 
 
 /*=====================================================
-    25. EVENT SINGEL PAGE css 
+    25. EVENT SINGEL PAGE css
 ======================================================*/
 
 .events-area{
@@ -3157,7 +3157,7 @@ p {
 
 
 /*=====================================================
-    26. TEACHERS SInGEL PAGE css 
+    26. TEACHERS SInGEL PAGE css
 ======================================================*/
 
 .teachers-left{
@@ -3252,7 +3252,7 @@ p {
 
 
 /*=====================================================
-    27. BLOG PAGE css 
+    27. BLOG PAGE css
 ======================================================*/
 
 .singel-blog{
@@ -3404,7 +3404,7 @@ p {
 
 
 /*=====================================================
-    28. BLOG SINGEL PAGE css 
+    28. BLOG SINGEL PAGE css
 ======================================================*/
 
 
@@ -3552,7 +3552,7 @@ p {
 }
 
 /*=====================================================
-    29. SHOP PAGE css 
+    29. SHOP PAGE css
 ======================================================*/
 
 .shop-top-search {
@@ -3626,7 +3626,7 @@ p {
 
 
 /*=====================================================
-    30. SHOP SINGEL PAGE css 
+    30. SHOP SINGEL PAGE css
 ======================================================*/
 
 .shop-destails{
@@ -3754,7 +3754,7 @@ p {
 
 
 /*=====================================================
-    31. CONTACT PAGE css 
+    31. CONTACT PAGE css
 ======================================================*/
 
 .contact-from{

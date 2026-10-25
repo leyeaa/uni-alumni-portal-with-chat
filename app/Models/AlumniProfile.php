@@ -18,6 +18,7 @@ class AlumniProfile extends Model
 
     protected $fillable = [
         'matricno',
+        'graduate_category',
         'surname',
         'other_names',
         'phone',

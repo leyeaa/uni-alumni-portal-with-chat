@@ -38,7 +38,7 @@ class AlumniController extends Controller
             ]);
 
             //submit data to profile table
-            
+
             $newImageName = str_replace("/","_",$request->matricno) . '.' . $request->profile_picture->extension();
             AlumniProfile::create([
                 'matricno' => $request->matricno,
@@ -51,7 +51,8 @@ class AlumniController extends Controller
                 'profile_picture'=>$newImageName,
                 'department'=>$request->department,
                 'graduation_month'=>$request->graduation_month,
-                'graduation_year'=>$request->graduation_year
+                'graduation_year'=>$request->graduation_year,
+                'graduate_category'=>$request->graduate_category
             ]);
             $this->storeImage($request,$newImageName);
 
@@ -107,7 +108,7 @@ class AlumniController extends Controller
         }
 
         AlumniProfile::where('matricno',$request->matricno)->update($updateRecords);
-        
+
         return back()->with('message', 'Profile Successfully Updated');
     }
 

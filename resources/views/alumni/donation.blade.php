@@ -1,12 +1,12 @@
-<x-layout page="FUF Donation">
+<x-layout page="Alumni Donation">
     <section id="contact-page" class="pt-90 pb-120 gray-bg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="contact-from">
                         <div class="section-title">
-                            <h5>University Academic Requests</h5>
-                            <h2>FUF Donation Page</h2>
+                            <h5>Donate Towards the Building of Our Family</h5>
+                            <h2>Donation Page</h2>
                         </div> <!-- section title -->
                         <div class="main-form pt-45">
                             <form action="{{route('donationData')}}" method="post">
@@ -32,7 +32,7 @@
                                                     {{$message}}
                                                 </div>
                                             @enderror
-                                            
+
                                         </div> <!-- singel form -->
                                     </div>
                                     <div class="col-md-6">
@@ -44,7 +44,7 @@
                                                     {{$message}}
                                                 </div>
                                             @enderror
-                                            
+
                                         </div> <!-- singel form -->
                                     </div>
                                     <div class="col-md-6">
@@ -105,7 +105,7 @@
                                     <div class="col-md-6">
                                         <div class="singel-form form-group">
                                             <label class="form-label" for="payment_type">Payment Description.:</label>
-                                            <input name="payment_type" type="text" placeholder="Payment Description" style="height:42px;" value="UNIMED FUF DONATION" required="required" readonly>
+                                            <input name="payment_type" type="text" placeholder="Payment Description" style="height:42px;" value="UNIMED DONATION" required="required" readonly>
                                             @error('payment_type')
                                                 <div class="warning">
                                                     {{$message}}
@@ -120,7 +120,7 @@
                                         <div class="singel-form" style="text-align: center;">
                                             <button type="submit" class="main-btn">Make Donation</button>
                                         </div> <!-- singel form -->
-                                    </div> 
+                                    </div>
                                 </div> <!-- row -->
                             </form>
                         </div> <!-- main form -->

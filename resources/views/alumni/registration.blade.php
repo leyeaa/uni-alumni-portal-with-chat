@@ -147,6 +147,33 @@
                                             @enderror
                                         </div>
                                     </div>
+
+
+                                  <div class="col-md-4">
+    <div class="singel-form">
+        <label class="form-label" for="graduate_category">
+            Graduate Category:
+        </label>
+
+        <select class="form-select" name="graduate_category" id="graduate_category">
+            <option value="">Select Category</option>
+            <option value="UNDERGRADUATE"
+                {{ old('graduate_category') == 'UNDERGRADUATE' ? 'selected' : '' }}>
+                UNDERGRADUATE
+            </option>
+            <option value="POSTGRADUATE"
+                {{ old('graduate_category') == 'POSTGRADUATE' ? 'selected' : '' }}>
+                POSTGRADUATE
+            </option>
+        </select>
+
+        @error('graduate_category')
+            <p class="warning">{{ $message }}</p>
+        @enderror
+    </div>
+</div>
+
+
                                     <div class="col-md-12">
                                         <div class="singel-form">
                                             <button type="submit" class="main-btn">Register !</button>
@@ -156,7 +183,7 @@
                                         <div class="singel-form" align="center">
                                             <em>Already Have Account?</em> <a href="/login">Login Here !</a>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </form>

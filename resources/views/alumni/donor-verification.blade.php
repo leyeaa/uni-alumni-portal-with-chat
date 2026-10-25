@@ -9,13 +9,13 @@
                             <h2>FUF Donation Page</h2>
                         </div> <!-- section title -->
                         <div class="main-form pt-45">
-                            <form action="https://www.unimed.edu.ng/portal/paymentprocessremita.php" method="post">
+                            <form action="{{route('donation.paystack')}}" method="post">
                                 @csrf
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="singel-form form-group">
                                             <label class="form-label" for="transid">Transaction ID.:</label>
-                                            <input name="transid" type="text" placeholder="Transaction ID" value="{{$formFields['transaction_id']}}" style="height:42px;" required="required" readonly>
+                                            <input name="transaction_id" type="text" placeholder="Transaction ID" value="{{$formFields['transaction_id']}}" style="height:42px;" required="required" readonly>
                                             @error('transid')
                                                 <div class="warning">
                                                     {{$message}}
@@ -26,32 +26,32 @@
                                     <div class="col-md-6">
                                         <div class="singel-form form-group">
                                             <label class="form-label" for="matno">Matric No/Donor ID<span style="font-size: 12px; font-style:italic;">(Alumni Member)</span>.:</label>
-                                            <input name="matno" type="text" placeholder="Matric No or Previous Donor ID" style="height:42px;" value="{{$formFields['matricno']}}" readonly>
+                                            <input name="matricno" type="text" placeholder="Matric No or Previous Donor ID" style="height:42px;" value="{{$formFields['matricno']}}" readonly>
                                             <input name="pcode" type="hidden" value="REMITA" >
                                             @error('matno')
                                                 <div class="warming">
                                                     {{$message}}
                                                 </div>
                                             @enderror
-                                            
+
                                         </div> <!-- singel form -->
                                     </div>
                                     <div class="col-md-6">
                                         <div class="singel-form form-group">
                                             <label class="form-label" for="sname">Surname.:</label>
-                                            <input name="sname" type="text" placeholder="Your Surname" style="height:42px;" value="{{$formFields['surname']}}" required="required" readonly>
+                                            <input name="surname" type="text" placeholder="Your Surname" style="height:42px;" value="{{$formFields['surname']}}" required="required" readonly>
                                             @error('sname')
                                                 <div class="warming">
                                                     {{$message}}
                                                 </div>
                                             @enderror
-                                            
+
                                         </div> <!-- singel form -->
                                     </div>
                                     <div class="col-md-6">
                                         <div class="singel-form form-group">
                                             <label class="form-label" for="oname">Other Name(s).:</label>
-                                            <input name="oname" type="text" placeholder="Other Name(s)" style="height:42px;" value="{{$formFields['other_names']}}" required="required" readonly>
+                                            <input name="other_names" type="text" placeholder="Other Name(s)" style="height:42px;" value="{{$formFields['other_names']}}" required="required" readonly>
                                             @error('oname')
                                                 <div class="warning">
                                                     {{$message}}
@@ -106,7 +106,7 @@
                                     <div class="col-md-6">
                                         <div class="singel-form form-group">
                                             <label class="form-label" for="payment_type">Payment Description.:</label>
-                                            <input name="paymenttype" type="text" placeholder="Payment Description" style="height:42px;" value="{{$formFields['payment_type']}}" required="required" readonly>
+                                            <input name="payment_type" type="text" placeholder="Payment Description" style="height:42px;" value="{{$formFields['payment_type']}}" required="required" readonly>
                                             @error('payment_type')
                                                 <div class="warning">
                                                     {{$message}}
@@ -119,7 +119,7 @@
                                         <div class="singel-form" style="text-align: center;">
                                             <button type="submit" name="pay" class="main-btn">Continue</button>
                                         </div> <!-- singel form -->
-                                    </div> 
+                                    </div>
                                 </div> <!-- row -->
                             </form>
                         </div> <!-- main form -->

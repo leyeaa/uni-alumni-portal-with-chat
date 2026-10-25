@@ -40,7 +40,7 @@
                                                     {{$message}}
                                                 </div>
                                             @enderror
-                                        </div> <!-- singel form --> 
+                                        </div> <!-- singel form -->
                                     </div>
                                     <div class="col-md-6">
                                         <div class="singel-form form-group">
@@ -69,7 +69,7 @@
                                         <div class="singel-form">
                                             <button type="submit" class="main-btn">Send</button>
                                         </div> <!-- singel form -->
-                                    </div> 
+                                    </div>
                                 </div> <!-- row -->
                             </form>
                         </div> <!-- main form -->
@@ -84,7 +84,7 @@
                                         <i class="fa fa-home"></i>
                                     </div>
                                     <div class="cont">
-                                        <p>Advancement Office, University of Medical Sciences, Laje Road, Ondo City, Ondo State</p>
+                                        <p>Alumni office, Beside Lecture Room 2, Olu Akinkugbe TETFund Building, Laje Campus.</p>
                                     </div>
                                 </div> <!-- singel address -->
                             </li>

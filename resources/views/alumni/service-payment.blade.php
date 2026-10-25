@@ -9,7 +9,7 @@
                             <h2>Payment Page</h2>
                         </div> <!-- section title -->
                         <div class="main-form pt-45">
-                            <form action="https://www.unimed.edu.ng/portal/paymentupverify.php?transid={{$serviceDetails->transaction_id}}" method="post">
+                            <form action="{{ url('alumniServicePaystack') }}" method="post">
                                 @csrf
                                 <div class="row">
                                     <div class="col-md-6">
@@ -21,7 +21,7 @@
                                                     {{$message}}
                                                 </div>
                                             @enderror
-                                            
+
                                         </div> <!-- singel form -->
                                     </div>
                                     <div class="col-md-6">
@@ -44,7 +44,7 @@
                                                     {{$message}}
                                                 </div>
                                             @enderror
-                                            
+
                                         </div> <!-- singel form -->
                                     </div>
                                     <div class="col-md-6">
@@ -129,7 +129,7 @@
                                         <div class="singel-form" style="text-align: center;">
                                             <button type="submit" class="main-btn">Make Payment</button>
                                         </div> <!-- singel form -->
-                                    </div> 
+                                    </div>
                                 </div> <!-- row -->
                             </form>
                         </div> <!-- main form -->

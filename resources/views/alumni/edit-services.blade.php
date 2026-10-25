@@ -9,20 +9,20 @@
                             <h2>Edit Service Request</h2>
                         </div> <!-- section title -->
                         <div class="main-form pt-45">
-                            <form action="/services/{{$serviceRequest->id}}" method="POST">
+                            <form action="/services/{{$serviceRequest->id}}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 @method('PUT')
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="singel-form form-group">
-                                            <label class="form-label" for="organization">Organization Name.:</label>
+                                            <label class="form-label" for="organization">Personal/Organization Name:</label>
                                             <input name="organization" type="text" placeholder="Organization" style="height:42px;" value="{{$serviceRequest->organization}}">
                                             @error('organization')
                                                 <div class="warning">
                                                     {{$message}}
                                                 </div>
                                             @enderror
-                                            
+
                                         </div> <!-- singel form -->
                                     </div>
                                     <div class="col-md-6">
@@ -64,16 +64,16 @@
                                                     {{$message}}
                                                 </div>
                                             @enderror
-                                        </div> <!-- singel form --> 
+                                        </div> <!-- singel form -->
                                     </div>
                                     <div class="col-md-6">
                                         <div class="singel-form form-group">
                                             <label class="form-label" for="request_method">Request Method.:</label><br />
                                             <select name="request_method" class="form-select">
-                                                <option @if ($serviceRequest->request_method=="Soft Copy") @selected(true) @endif >Soft Copy</option>
-                                                <option @if ($serviceRequest->request_method=="Student Copy") @selected(true) @endif >Student Copy</option>
-                                                <option @if ($serviceRequest->request_method=="Hard Copy") @selected(true) @endif >Hard Copy</option>
-                                                <option @if ($serviceRequest->request_method=="Soft & Hard Copy") @selected(true) @endif >Soft & Hard Copy</option>
+                                                <option @if ($serviceRequest->request_method=="Student Copy via Email") @selected(true) @endif >Student Copy via Email</option>
+                                                <option @if ($serviceRequest->request_method=="Student Copy via Courier") @selected(true) @endif >Student Copy via Courier</option>
+                                                <option @if ($serviceRequest->request_method=="Official Copy via Email") @selected(true) @endif >Official Copy via Email</option>
+                                                <option @if ($serviceRequest->request_method=="Official Copy via Courier") @selected(true) @endif >Official Copy via Courier</option>
                                             </select>
                                             @error('request_method')
                                                 <div class="warning">
@@ -82,12 +82,52 @@
                                             @enderror
                                         </div> <!-- singel form -->
                                     </div>
+
+
+
+                                 <div class="col-md-12">
+                                <div class="singel-form form-group">
+                                    <label class="form-label">Upload Application Letter</label>
+
+                                    <input type="file"
+                                        name="request_document"
+                                        class="form-control"
+                                        required>
+
+                                    @error('request_document')
+                                        <div class="warning">
+                                            {{ $message }}
+                                        </div>
+                                    @enderror
+                                </div>
+                            </div>
+
+
+
+                                 <div class="col-md-12">
+                                <div class="singel-form form-group">
+                                    <label class="form-label">Upload Additional Dpocument</label>
+
+                                    <input type="file"
+                                        name="request_add_document"
+                                        class="form-control"
+                                        required>
+
+                                    @error('request_add_document')
+                                        <div class="warning">
+                                            {{ $message }}
+                                        </div>
+                                    @enderror
+                                </div>
+                            </div>
+
+
                                     <p class="form-message"></p>
                                     <div class="col-md-12">
                                         <div class="singel-form" style="text-align: center;">
                                             <button type="submit" class="main-btn">Update Request</button>
                                         </div> <!-- singel form -->
-                                    </div> 
+                                    </div>
                                 </div> <!-- row -->
                             </form>
                         </div> <!-- main form -->

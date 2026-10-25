@@ -18,6 +18,7 @@ class ServiceRequest extends Model
 
     protected $fillable = [
         'matricno',
+        'graduate_category',
         'organization',
         'country',
         'address',
@@ -25,7 +26,9 @@ class ServiceRequest extends Model
         'request_method',
         'status',
         'transaction_id',
-        'payment'
+        'payment',
+        'request_document',
+        'request_add_document'
     ];
 
     /**

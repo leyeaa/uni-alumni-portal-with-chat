@@ -26,7 +26,7 @@ class User extends Authenticatable
     public $incrementing = false;
 
     protected $keyType='string';
-    
+
     protected $fillable = [
         'matricno',
         'name',
@@ -63,7 +63,17 @@ class User extends Authenticatable
     {
         return $this->hasMany(ServiceRequest::class,'matricno','matricno');
     }
-    
+
+       public function dueRequests(): HasMany
+    {
+        return $this->hasMany(DueRequest::class,'matricno','matricno');
+    }
+
+      public function alumniregRequests(): HasMany
+    {
+        return $this->hasMany(Alumnireg::class,'matricno','matricno');
+    }
+
     public function messages(): HasMany
     {
         return $this->hasMany(Message::class,'matricno','matricno');

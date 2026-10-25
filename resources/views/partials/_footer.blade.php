@@ -1,5 +1,5 @@
     <!--====== FOOTER PART START ======-->
-    
+
     <footer id="footer-part">
         <div class="footer-top pt-40 pb-70">
             <div class="container">
@@ -11,10 +11,12 @@
                             </div>
                             <p>University of Medical Sciences, Ondo</p>
                             <ul class="mt-20">
-                                <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://m.facebook.com/story.php?story_fbid=pfbid021WmggVhTSTvXVk61JKxxQKnnZ8ZzsNNf5pro6VtJum1HoQUfLTCSGMpa4CVZBRRYl&id=100076756868973"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="https://x.com/unimed_alumni?s=21&t=viGTRjxGqxlonUtAQDjJTw"><i class="fa fa-twitter"></i></a></li>
+                                {{-- <li><a href="#"><i class="fa fa-google-plus"></i></a></li> --}}
+                                <li><a href="http://www.linkedin.com/in/unimed-alumni"><i class="fa fa-linkedin"></i></a></li>
+                                 <li><a href="https://www.instagram.com/unimed_alumni?igsh=MWpwNmU2dDVvM3dsaw%3D%3D&utm_source=qr"><i class="fa fa-instagram"></i></a></li>
+
                             </ul>
                         </div> <!-- footer about -->
                     </div>
@@ -43,7 +45,7 @@
                             <ul>
                                 <li><a href="/donate"><i class="fa fa-angle-right"></i>Donation</a></li>
                                 <li><a href="/contact-us"><i class="fa fa-angle-right"></i>Contact Us</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>News/Events</a></li>
+                                <li><a href="{{ route('news.index') }}"><i class="fa fa-angle-right"></i>News/Events</a></li>
                             </ul>
                         </div> <!-- support -->
                     </div>
@@ -58,7 +60,7 @@
                                         <i class="fa fa-home"></i>
                                     </div>
                                     <div class="cont">
-                                        <p>Advancement Office, University of Medical Sciences, Ondo</p>
+                                        <p>Alumni office, Beside Lecture Room 2, Olu Akinkugbe TETFund Building, Laje Campus.</p>
                                     </div>
                                 </li>
                                 <li>
@@ -83,7 +85,7 @@
                 </div> <!-- row -->
             </div> <!-- container -->
         </div> <!-- footer top -->
-        
+
         <div class="footer-copyright pt-10 pb-25">
             <div class="container">
                 <div class="row">
@@ -101,5 +103,5 @@
             </div> <!-- container -->
         </div> <!-- footer copyright -->
     </footer>
-    
+
     <!--====== FOOTER PART ENDS ======-->
